@@ -1,14 +1,19 @@
-This will have a 6-colour colour palette:
+SAMUEL ABRAHAM CHRISTMAS GAME IDEA:
+The Colour Palette:
   Pure Red
   Pure Green
   Pure Blue
   Pure Black
   Pure White
   Pure Cyan (Pure Green + Pure Blue)
-This will have a 5-shape shape palette:
+The Shape palette:
   Circle (Minimal use)
   Rectangle (NOT rounded)
   Square (NOT rounded)
   Triangle (Minimal use) (NOT rounded)
   Text (Bold, Arial)
-SOMETHING TO DO WITH RUNNING DEER!!!
+Idea:
+  1. This is a game with a running deer
+  2. It will have simple graphics
+  3. Objects are moving left across the screen all the time
+  4. The reindeer has to capture Evergreens and Christmas Tree Ornaments and avoid the huge boulders and turbulence
