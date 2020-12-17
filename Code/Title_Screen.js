@@ -35,5 +35,12 @@ function draw() {
   rectMode(CENTER);
   stroke(0);
   strokeWeight(5);
-  rect(width / 2, height - 100, 400, 120);
+  rect(width / 2 - 500, height - 100, 400, 120);
+  rect(width / 2 + 500, height - 100, 400, 120);
+  noStroke();
+  textSize(100);
+  textAlign(CENTER, CENTER);
+  text('PLAY', width / 2 - 500, height - 110);
+  textSize(50);
+  text('TOGGLE\nMUSIC', width / 2 + 500, height - 110);
 }
