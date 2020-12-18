@@ -15,6 +15,9 @@ function setup() {
 }
 
 function draw() {
+  if ((reindeer.x < 50 || reindeer.x > width - 50) || (reindeer.y < 50 || reindeer.y > height - 50)) {
+    noLoop();
+  }
   background(0, 255, 255);
   time = floor(frameCount / 60);
   for (let i = objs.length - 1; i >= 0; i--) {
@@ -36,8 +39,8 @@ function draw() {
     }
     objs[i].update();
     objs[i].show();
-  }
 
+  }
   if (frameCount % 30 == 0 && round(random(1)) == 0) {
     objs.push(new UFO(width + 100, random(height), round(random(1))));
   }
