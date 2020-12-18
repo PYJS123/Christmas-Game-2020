@@ -1,4 +1,5 @@
 let reindeer;
+let spd = 2;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
