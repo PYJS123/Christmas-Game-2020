@@ -14,6 +14,14 @@ function draw() {
       objs.splice(i, 1);
       continue;
     }
+    if (dist(objs[i].x, objs[i].y, reindeer.x, reindeer.y) <= 75) {
+      if (objs[i].bad == 1) {
+        objs.splice(i, 1);
+        continue;
+      } else {
+        noLoop();
+      }
+    }
     objs[i].update();
     objs[i].show();
   }
