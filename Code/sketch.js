@@ -9,7 +9,11 @@ function setup() {
 
 function draw() {
   background(0, 255, 255);
-  for (let i = 0; i < objs.length; i++) {
+  for (let i = objs.length - 1; i >= 0; i--) {
+    if (objs[i].x < -25) {
+      objs.splice(i, 1);
+      continue;
+    }
     objs[i].update();
     objs[i].show();
   }
