@@ -7,6 +7,7 @@ let score = 0,
 let lives = 3,
   llives = 3;
 let last;
+let off = false;
 
 function preload() {
   verdana = loadFont('7a9c453f-539d-4b06-8c84-fd90088c243d.TTF');
@@ -19,10 +20,10 @@ function setup() {
 
 function draw() {
   if ((reindeer.x < 50 || reindeer.x > width - 50) || (reindeer.y < 50 || reindeer.y > height - 50)) {
-    noLoop();
+    off = true;
   }
   if (lives <= 0.01) {
-    noLoop();
+    off = true;
   }
   background(0, 255, 255);
   time = floor(frameCount / 60);
