@@ -25,8 +25,11 @@ function draw() {
   if (lives <= 0.01) {
     off = true;
   }
+  noStroke();
   background(0, 255, 255);
-  time = floor(frameCount / 60);
+  if (!off) {
+    time = floor(frameCount / 60);
+  }
   for (let i = objs.length - 1; i >= 0; i--) {
     if (objs[i].x < -25) {
       if (objs[i].bad == 1) {
@@ -45,14 +48,18 @@ function draw() {
         objs.splice(i, 1);
       }
     }
-    objs[i].update();
+    if (!off) {
+      objs[i].update();
+    }
     objs[i].show();
 
   }
   if (frameCount % 30 == 0 && round(random(1)) == 0) {
     objs.push(new UFO(width + 100, random(height), round(random(1))));
   }
-  reindeer.update();
+  if (!off) {
+    reindeer.update();
+  } else {}
   reindeer.show();
   if (keyIsDown(UP_ARROW)) {
     reindeer.fy -= reindeer.spd;
@@ -78,9 +85,22 @@ function draw() {
   textAlign(CENTER, TOP);
   fill(0, 0, 125);
   text('Health:', width / 2, 10);
+  stroke(2);
   fill(0, 255, 255);
   rect(width / 2 - 200 / 2, 50, 200, 30);
   fill(0, 255, 0);
   rect(width / 2 - 200 / 2, 50, 200 / 3 * lives, 30);
   lives = lerp(lives, llives, 0.2);
+  if (off) {
+    push();
+    rectMode(CORNERS);
+    fill(0);
+    rect(width / 3, height / 3, width / 3 * 2, height / 3 * 2);
+    fill(255);
+    textSize(70);
+    text('GAME OVER!', width / 2, height / 3);
+    textSize(20);
+    text('Press ENTER to restart', width / 2, height / 2);
+    pop();
+  }
 }
