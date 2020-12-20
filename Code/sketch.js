@@ -21,7 +21,7 @@ function draw() {
   if ((reindeer.x < 50 || reindeer.x > width - 50) || (reindeer.y < 50 || reindeer.y > height - 50)) {
     noLoop();
   }
-  if (lives <= 0.001) {
+  if (lives <= 0.01) {
     noLoop();
   }
   background(0, 255, 255);
