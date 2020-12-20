@@ -7,6 +7,7 @@ The Colour Palette:
   Pure White
   Pure Cyan (Pure Green + Pure Blue)
   Pure Brown
+  Pure Black (ONLY for restart sign)
 The Shape palette:
   Circle (Minimal use)
   Rectangle (NOT rounded)
