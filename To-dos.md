@@ -1,6 +1,7 @@
 # TO-DOS FOR CHRISTMAS GAME, 2020!!!:
 # General:
   -Put title screen with game
+  -Music
 
 
 # Proper Game:
@@ -28,7 +29,10 @@
   -Hat and scarf
   
   -Curved Bottom
+  
+  -Place Graphics
 
   -Put title screen with game
   
-  -Place Graphics
+  -Music
+  
