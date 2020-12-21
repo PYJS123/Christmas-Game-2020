@@ -3,6 +3,7 @@ let spd = 2;
 let objs = [];
 let score = 0,
   time = 0,
+  ntime = 0,
   miss = 0;
 let lives = 3,
   llives = 3;
@@ -28,7 +29,8 @@ function draw() {
   noStroke();
   background(0, 255, 255);
   if (!off) {
-    time = floor(frameCount / 60);
+    ntime++;
+    time = floor(ntime / 60);
   }
   for (let i = objs.length - 1; i >= 0; i--) {
     if (objs[i].x < -25) {
@@ -54,12 +56,12 @@ function draw() {
     objs[i].show();
 
   }
-  if (frameCount % 30 == 0 && round(random(1)) == 0) {
+  if (frameCount % 30 == 0 && round(random(1)) == 0 && off === false) {
     objs.push(new UFO(width + 100, random(height), round(random(1))));
   }
   if (!off) {
     reindeer.update();
-  } else {}
+  }
   reindeer.show();
   if (keyIsDown(UP_ARROW)) {
     reindeer.fy -= reindeer.spd;
@@ -91,7 +93,7 @@ function draw() {
   fill(0, 255, 0);
   rect(width / 2 - 200 / 2, 50, 200 / 3 * lives, 30);
   lives = lerp(lives, llives, 0.2);
-  if (off) {
+  if (off === true) {
     push();
     rectMode(CORNERS);
     fill(0);
@@ -100,7 +102,23 @@ function draw() {
     textSize(70);
     text('GAME OVER!', width / 2, height / 3);
     textSize(20);
-    text('Press ENTER to restart', width / 2, height / 2);
+    text('Press any key to restart', width / 2, height / 2);
     pop();
+  }
+}
+
+function keyPressed() {
+  if (off === true) {
+    off = false;
+    score = 0;
+    miss = 0;
+    ntime = 0;
+    lives = 3;
+    llives = 3;
+    objs = [];
+    reindeer.fx = width / 5;
+    reindeer.fy = height / 2;
+    reindeer.x = width / 5;
+    reindeer.y = height / 2;
   }
 }
