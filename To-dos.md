@@ -11,6 +11,8 @@
   
   -Place Graphics
   
+  -Improve text in black boxes (Achievements)
+  
 
 # Reindeer:
   -Curved Bottom
@@ -34,3 +36,4 @@
   
   -Music
   
+  -Improve text in black boxes (Achievements)  
