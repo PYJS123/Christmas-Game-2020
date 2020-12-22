@@ -25,6 +25,8 @@
 
 
 # PREFERRED ORDER:
+  -Track high scores
+
   -Objects with lazers, which take away half health
   
   -Tail
