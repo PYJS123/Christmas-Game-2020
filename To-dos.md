@@ -11,7 +11,7 @@
   
   -Place Graphics
   
-  -Track high scores
+  -Visualise high scores
   
 
 # Reindeer:
@@ -26,7 +26,7 @@
 
 
 # PREFERRED ORDER:
-  -Track high scores
+  -Visualise high scores
 
   -Objects with lazers, which take away half health
   
