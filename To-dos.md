@@ -11,8 +11,6 @@
   
   -Place Graphics
   
-  -Visualise high scores
-  
 
 # Reindeer:
   -Tail
@@ -26,8 +24,6 @@
 
 
 # PREFERRED ORDER:
-  -Visualise high scores
-
   -Objects with lazers, which take away half health
   
   -Tail
