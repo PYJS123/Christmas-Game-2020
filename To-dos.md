@@ -13,8 +13,6 @@
   
 
 # Reindeer:
-  -Tail
-  
   -Curved Bottom
   
   -Hat and scarf
@@ -25,8 +23,6 @@
 
 # PREFERRED ORDER:
   -Objects with lazers, which take away half health
-  
-  -Tail
   
   -Hat and scarf
   
