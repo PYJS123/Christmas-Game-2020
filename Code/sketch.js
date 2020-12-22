@@ -8,13 +8,14 @@ let score = 0,
   ntime = 0,
   miss = 0,
   lmiss = Infinity,
-  hss = 0,
+  hss = -1,
   lms = Infinity;
 let lives = 3,
   llives = 3;
 let last;
 let off = false;
-let ach = [];
+let ach = ['', '', '', '', ''];
+
 
 function preload() {
   verdana = loadFont('7a9c453f-539d-4b06-8c84-fd90088c243d.TTF');
@@ -93,8 +94,8 @@ function draw() {
   textAlign(CENTER, TOP);
   fill(0, 0, 125);
   text('Health:', width / 2, 10);
-  stroke(2);
   fill(0, 255, 255);
+  stroke(2);
   rect(width / 2 - 200 / 2, 50, 200, 30);
   fill(0, 255, 0);
   rect(width / 2 - 200 / 2, 50, 200 / 3 * lives, 30);
@@ -107,28 +108,29 @@ function draw() {
     fill(255);
     textSize(70);
     text('GAME OVER!', width / 2, height / 3);
-    textSize(20);
-    text('Press any key to restart', width / 2, height / 2);
+    textSize(10);
+    textAlign(CENTER, CENTER);
+    text('Press any key to restart' + ach[0] + ach[1] + ach[2] + ach[3] + ach[4], width / 2, height / 2 + 27);
     pop();
     if (score > hscore) {
       hscore = score;
-      ach.push('NEW High score!:\n' + score);
+      ach[0] = ('\nNEW High score!:\n' + score);
     }
     if (miss < lmiss) {
       lmiss = miss;
-      ach.push('NEW Lowest amount of misses!:\n' + miss);
+      ach[1] = ('\nNEW Lowest amount of misses!:\n' + miss);
     }
     if (time > htime) {
       htime = time;
-      ach.push('NEW Longest time!:\n' + time);
+      ach[2] = ('\nNEW Longest time!:\n' + time);
     }
-    if (hss < score / time) {
+    if (score / time > hss) {
       hss = score / time;
-      ach.push('NEW Highest score per second!:\n' + hss);
+      ach[3] = ('\nNEW Highest score per second!:\n' + hss);
     }
     if (miss / time < lms) {
       lms = miss / time;
-      ach.push('NEW Lowest misses per second!:\n' + lms);
+      ach[4] = ('\nNEW Lowest misses per second!:\n' + lms);
     }
   }
 }
