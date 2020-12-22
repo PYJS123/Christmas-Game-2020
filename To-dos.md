@@ -1,6 +1,7 @@
 # TO-DOS FOR CHRISTMAS GAME, 2020!!!:
 # General:
   -Put title screen with game
+  
   -Music
 
 
@@ -8,6 +9,8 @@
   -Objects with lazers, which take away half health
   
   -Place Graphics
+  
+  -Track high scores
   
 
 # Reindeer:
