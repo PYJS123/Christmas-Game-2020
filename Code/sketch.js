@@ -2,13 +2,19 @@ let reindeer;
 let spd = 2;
 let objs = [];
 let score = 0,
+  hscore = -1,
   time = 0,
+  htime = -1,
   ntime = 0,
-  miss = 0;
+  miss = 0,
+  lmiss = Infinity,
+  hss = 0,
+  lms = Infinity;
 let lives = 3,
   llives = 3;
 let last;
 let off = false;
+let ach = [];
 
 function preload() {
   verdana = loadFont('7a9c453f-539d-4b06-8c84-fd90088c243d.TTF');
@@ -104,6 +110,26 @@ function draw() {
     textSize(20);
     text('Press any key to restart', width / 2, height / 2);
     pop();
+    if (score > hscore) {
+      hscore = score;
+      ach.push('NEW High score!:\n' + score);
+    }
+    if (miss < lmiss) {
+      lmiss = miss;
+      ach.push('NEW Lowest amount of misses!:\n' + miss);
+    }
+    if (time > htime) {
+      htime = time;
+      ach.push('NEW Longest time!:\n' + time);
+    }
+    if (hss < score / time) {
+      hss = score / time;
+      ach.push('NEW Highest score per second!:\n' + hss);
+    }
+    if (miss / time < lms) {
+      lms = miss / time;
+      ach.push('NEW Lowest misses per second!:\n' + lms);
+    }
   }
 }
 
