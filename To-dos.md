@@ -8,7 +8,7 @@
 
 
 # Proper Game:
-  -Objects with lazers, which take away half health
+  -Objects with lazers, which take away half health (Optional)
   
   -Place Graphics
   
@@ -25,8 +25,6 @@
 
 
 # PREFERRED ORDER:
-  -Objects with lazers, which take away half health
-  
   -Hat and scarf
   
   -Curved Bottom
@@ -38,5 +36,7 @@
   -Music
   
   -Improve text in black boxes (Achievements)  
+  
+  -Objects with lazers, which take away half health (Optional)
   
   -Publish scores worldwide
