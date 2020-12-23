@@ -2,8 +2,9 @@
 # General:
   -Put title screen with game
   
-  
   -Music
+  
+  -Publish scores worldwide
 
 
 # Proper Game:
@@ -37,3 +38,5 @@
   -Music
   
   -Improve text in black boxes (Achievements)  
+  
+  -Publish scores worldwide
