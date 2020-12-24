@@ -1,6 +1,6 @@
 # TO-DOS FOR CHRISTMAS GAME, 2020!!!:
 # General:
-  -Put title screen with game
+  -Add a Parallax Effect
   
   -Music
   
@@ -35,10 +35,10 @@
   -Curved Bottom
   
   -Place Graphics
-
-  -Put title screen with game
   
   -Music
+  
+  -Add a Parallax Effect
   
   -Improve text in black boxes (Achievements)  
   
