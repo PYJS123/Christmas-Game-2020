@@ -19,12 +19,17 @@
   -Curved Bottom
   
   -Hat and scarf
+  
+# Other objects:
+  -Create them
 
 
 
 
 
 # PREFERRED ORDER:
+  -Create other objects
+
   -Hat and scarf
   
   -Curved Bottom
