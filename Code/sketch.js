@@ -27,7 +27,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 10, windowHeight - 20);
   reindeer = new Reindeer(width / 5, height / 2);
   textFont(verdana);
 }
