@@ -21,9 +21,9 @@ let playing = false;
 
 
 function preload() {
-  verdana = loadFont('2c34c6e5-a98f-4337-8872-c89750fed25d (2).TTF');
-  imgRein = loadImage('Reindeer6.png');
-  imgTurb = loadImage('Turbulence.png');
+  verdana = loadFont('../Other Assets/2c34c6e5-a98f-4337-8872-c89750fed25d (2).TTF');
+  imgRein = loadImage('../Images/Reindeer6.png');
+  imgTurb = loadImage('../Images/Turbulence.png');
 }
 
 function setup() {
